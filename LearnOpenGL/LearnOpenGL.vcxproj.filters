@@ -21,20 +21,29 @@
     <ClCompile Include="shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="chapter2_main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="shader.fs">
+    <None Include="chapter2_colors.fs">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="shader.vs">
+    <None Include="chapter2_colors.vs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="chapter2_lamp.vs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="chapter2_lamp.fs">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
