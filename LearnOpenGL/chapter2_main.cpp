@@ -130,18 +130,18 @@ int main() {
 
         // Draw the box object
         objectShader.use();
+        objectShader.setVec3("light.position", lightPos);
+        objectShader.setVec3("viewPos", camera.Position);
+        // Light
+        objectShader.setVec3("light.ambient", 0.2f, 0.2f, 0.2f);
+        objectShader.setVec3("light.diffuse", 0.5f, 0.5f, 0.5f);
+        objectShader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);
         // Material
         objectShader.setVec3("material.ambient", 1.0f, 0.5f, 0.31f);
         objectShader.setVec3("material.diffuse", 1.0f, 0.5f, 0.31f);
         objectShader.setVec3("material.specular", 0.5f, 0.5f, 0.5f);
         objectShader.setFloat("material.shininess", 32.0f);
-        // Light
-        objectShader.setVec3("light.position", lightPos);
-        objectShader.setVec3("light.ambient", 0.2f, 0.2f, 0.2f);
-        objectShader.setVec3("light.diffuse", 0.5f, 0.5f, 0.5f);
-        objectShader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);
-        // View
-        objectShader.setVec3("viewPos", camera.Position);
+        
         glm::mat4 model = glm::mat4(1.0f);
         objectShader.setMat4("model", model);
         glm::mat4 view = camera.GetViewMatrix();
