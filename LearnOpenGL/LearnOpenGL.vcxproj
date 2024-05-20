@@ -139,19 +139,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="chapter2_lightcaster.cpp" />
     <ClCompile Include="glad.c" />
-    <ClCompile Include="chapter2_main.cpp" />
     <ClCompile Include="shader.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="chapter2_colors.fs" />
-    <None Include="chapter2_colors.vs" />
-    <None Include="chapter2_lamp.fs" />
-    <None Include="chapter2_lamp.vs" />
+    <None Include="chapter2_cube_lightcaster.fs" />
+    <None Include="chapter2_cube_lightcaster.vs" />
+    <None Include="chapter2_point_light.fs" />
+    <None Include="chapter2_point_light.vs" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="camera.h" />
     <ClInclude Include="shader.h" />
+    <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
