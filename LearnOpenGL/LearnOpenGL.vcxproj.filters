@@ -21,23 +21,9 @@
     <ClCompile Include="shader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="chapter2_lightcaster.cpp">
+    <ClCompile Include="chapter3_model_loading.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="chapter2_point_light.vs">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="chapter2_point_light.fs">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="chapter2_cube_lightcaster.fs">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="chapter2_cube_lightcaster.vs">
-      <Filter>Resource Files</Filter>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -55,5 +41,16 @@
     <ClInclude Include="model.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\glad\glad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="chapter3_model_loading.fs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="chapter3_model_loading.vs">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
