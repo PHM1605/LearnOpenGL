@@ -152,7 +152,9 @@
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="chapter3_model_loading.fs" />
+    <None Include="chapter2_cube_lightcaster.fs" />
+    <None Include="chapter2_cube_lightcaster.vs" />
+    <None Include="chapter3_model_loading.frag" />
     <None Include="chapter3_model_loading.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

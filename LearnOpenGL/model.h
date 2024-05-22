@@ -106,7 +106,7 @@ private:
 		vector<Texture> textures;
 		for (unsigned int i = 0; i < mat->GetTextureCount(type); i++) {
 			aiString str;
-			mat->GetTexture(type, i, &str);
+			mat->GetTexture(type, i, &str); // diffuse.jpg, specular.png
 			bool skip = false;
 			for (unsigned int j = 0; j < textures_loaded.size(); j++) {
 				if (std::strcmp(textures_loaded[j].path.data(), str.C_Str()) == 0) {

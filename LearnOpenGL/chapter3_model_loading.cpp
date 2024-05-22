@@ -1,24 +1,20 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
-
-#include "shader.h"
+#include <iostream>
 #include "camera.h"
+#include "shader.h"
 #include "model.h"
 
-#include <iostream>
+const unsigned int SCR_WIDTH = 800;
+const unsigned int SCR_HEIGHT = 600;
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 void processInput(GLFWwindow* window);
-
-const unsigned int SCR_WIDTH = 800;
-const unsigned int SCR_HEIGHT = 600;
 
 Camera camera(glm::vec3(1.0f, 1.0f, 1.0f));
 
@@ -52,10 +48,10 @@ int main() {
         return -1;
     }
 
-    //stbi_set_flip_vertically_on_load(true);
+    stbi_set_flip_vertically_on_load(true);
     glEnable(GL_DEPTH_TEST);
-    Shader objectShader("chapter3_model_loading.vs", "chapter3_model_loading.fs"); // for the object
-    Model ourModel("backpack.obj");
+    Shader objectShader("chapter3_model_loading.vs", "chapter3_model_loading.frag"); // for the object
+    Model ourModel("backpack/backpack.obj");
 
     while (!glfwWindowShouldClose(window)) {
         float currentFrame = static_cast<float>(glfwGetTime());

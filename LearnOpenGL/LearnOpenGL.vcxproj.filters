@@ -46,10 +46,16 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="chapter3_model_loading.fs">
+    <None Include="chapter3_model_loading.frag">
       <Filter>Resource Files</Filter>
     </None>
     <None Include="chapter3_model_loading.vs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="chapter2_cube_lightcaster.fs">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="chapter2_cube_lightcaster.vs">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
